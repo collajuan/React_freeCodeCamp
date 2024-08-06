@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../stylesheets/Testimonio.css';
 
-function Testimonio () {
+function Testimonio (props) {
   return (
     <div className='contenedor-testimonio'>
       <img 
@@ -11,11 +11,9 @@ function Testimonio () {
         alt='imagen de testimonio'
         />
         <div className='contenedor-texto-testimonio'>
-          <p className='nombre-testimonio'>Emma</p>
-          <p className='cargo-testimonio'>Ingeniera</p>
-          <p className='texto-testimonio'>"I've always struggled with learning JavaScript. I've taken many courses but freeCodeCamp's course was the one which stuck. Studying JavaScript as well as data structures and algorithms on freeCodeCamp gave me the skills and confidence I needed to land my dream job as a software engineer at Spotify."
-
-</p>
+          <p className='nombre-testimonio'>{props.name} en {props.pais}</p>
+          <p className='cargo-testimonio'>{props.cargo}en {props.empresa}</p>
+          <p className='texto-testimonio'>{props.testimonio}</p>
         </div>
     </div>
   )
