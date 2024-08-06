@@ -8,7 +8,14 @@ function App() {
       <div className='contenedor-principal'>
 
       <h1>Esto es el titulooooooooooooooooooooooo</h1>
-      <Testimonio />
+      <Testimonio 
+        name = 'Emmi'
+        pais = ''
+        imagen = ''
+        cargo = ''
+        empresa = ''
+        testimonio = ''        
+      />
       </div>
     </div>
   );
