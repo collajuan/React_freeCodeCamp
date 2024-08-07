@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../stylesheets/Boton.css'
+
 //props con desestructuración
 function Boton({ text, esBotonDeClick, manejarClick }) {
     return (
