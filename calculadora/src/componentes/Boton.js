@@ -9,7 +9,8 @@ function Boton(props) {
 
 
     return (
-        <div className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}>
+        <div className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()} 
+        onClick={() => props.manejarClic(props.children)}>
             {/* Valor que tiene la etiqueta en el padre */}
             {props.children}
 
