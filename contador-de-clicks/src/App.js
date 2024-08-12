@@ -2,15 +2,21 @@ import './App.css';
 import Boton from './componentes/Boton';
 import Contador from './componentes/Contador';
 import freeCodeCampLogo from './img/Logo.bmp'
+import { useState } from 'react';
 
 function App() {
 
+  // USO de HooKs useState
+  const [numClicks, setNumClicks] = useState(0);
+
   const manejarClick = () => {
-    console.log('clic');
+    setNumClicks(numClicks + 10)
+    // console.log('clic');
   }
 
   const reiniciarContador = () => {
-    console.log('Reiniciar');
+    setNumClicks(0)
+    // console.log('Reiniciar');
   }
 
 
@@ -24,7 +30,7 @@ function App() {
         </div>
         <div className='contenedor-principal'>
           
-            <Contador numClicks='5' />
+            <Contador numClicks={numClicks} />
 
             <Boton 
               text='Click'
