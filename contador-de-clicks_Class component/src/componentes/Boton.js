@@ -2,16 +2,21 @@ import React from 'react';
 
 import '../stylesheets/Boton.css'
 
-//props con desestructuración
-function Boton({ text, esBotonDeClick, manejarClick }) {
-    return (
-        <button 
-            className={ esBotonDeClick ? 'boton-click' :'boton-reiniciar' }
-            onClick={manejarClick} >
-            {text}
-        </button>
-    )
+
+class Boton extends React.Component {
+    render() {
+        return (
+            <button 
+                className={ this.props.esBotonDeClick ? 'boton-click' :'boton-reiniciar' }
+                onClick={this.props.manejarClick} >
+                {this.props.text}
+            </button>
+        )
+    }
 }
+
+//props con desestructuración
+
 
 
 export default Boton
