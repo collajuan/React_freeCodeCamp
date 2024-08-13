@@ -3,7 +3,6 @@ import Testimonio from './componentes/Testimonio'
 
 import './App.css';
 
-
 class App extends React.Component {
   render () {
     return (
