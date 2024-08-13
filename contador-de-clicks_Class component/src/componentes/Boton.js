@@ -15,8 +15,6 @@ class Boton extends React.Component {
     }
 }
 
-//props con desestructuración
-
 
 
 export default Boton
