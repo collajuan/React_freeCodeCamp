@@ -18,7 +18,9 @@ function TareaFormulario(props) {
             texto: input,
             completada: false
         }     
-        
+        // La propiedad onSubmit en realidad es una funcion callBack definida en quien renderiza a Tareaformulario
+        // y a esa funcion se le pasa el parametro tareaNueva. La funcion es agregarTarea en el componente
+        // ListaDeTareas
         props.onSubmit(tareaNueva)
     }
 
